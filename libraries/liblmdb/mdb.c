@@ -4486,6 +4486,7 @@ static void NTAPI mdb_tls_callback(PVOID module, DWORD reason, PVOID ptr)
 	}
 }
 #ifdef __GNUC__
+#else
 #ifdef _M_IX86
 /* Force some symbol references.
  *	_tls_used forces the linker to create the TLS directory if not already done
